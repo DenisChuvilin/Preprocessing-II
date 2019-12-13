@@ -6,7 +6,10 @@
   width: 100%;
 } //closes roof
 .nav-content {
+
   .space-between-centered();
+
+}
 
   nav {
     .space-between-centered();
@@ -14,11 +17,12 @@
     width: 42%;
     margin-right: 3rem;
     font-size: 1rem;
-  }
+  } //closes nav
   h1 {
     width: 100%;
-  }
-}
+    margin: 2rem 0;
+  } //closes h2
+
 
 .dash {
   border: 0 none;
@@ -26,4 +30,16 @@
   background: none;
   height: 0;
   margin-bottom: 0;
+}
+
+@media @mobile {
+    
+    .nav-content {
+      display:flex;
+      flex-direction: column;
+     
+      nav {
+        width: 90%;
+      }
+    }
 }

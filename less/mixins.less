@@ -1,27 +1,34 @@
 // Mixins in here
-.space-between-centered(){
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
+.space-between-centered() {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.column-centered(){
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.column-between() {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.bottom-border(){
-    border-bottom: 2px dashed #c0c0c0;
+.column-between-wrap() {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-.button(@bg-color,@color){
-    background-color:@bg-color;
-    color:@color;
-    border-radius: 25px;
-    padding:5%;
-    width:100%;
-    text-align: center;
-    text-size:2rem ;
-    }
+.bottom-border() {
+  border-bottom: 2px dashed #c0c0c0;
+}
+
+.button(@bg-color,@color) {
+  background-color: @bg-color;
+  color: @color;
+  border-radius: 25px;
+  padding: 5%;
+  width: 100%;
+  text-align: center;
+  text-size: 2rem;
+}
