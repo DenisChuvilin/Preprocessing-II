@@ -1,1 +1,49 @@
 // Navigation Styles here
+
+.roof {
+  margin: 0 auto;
+  max-width: 800px;
+  width: 100%;
+} //closes roof
+.nav-content {
+  .space-between-centered();
+
+}
+
+  nav {
+    .space-between-centered();
+    text-decoration: none;
+    width: 42%;
+    margin-right: 3rem;
+    font-size: 2rem;
+  } //closes nav
+  h1 {
+    width: 100%;
+    margin: 2rem 0;
+  } //closes h2
+
+
+.dash {
+  border: 0 none;
+  border-top: 2px dashed #c0c0c0;
+  background: none;
+  height: 0;
+  margin-bottom: 0;
+}
+
+@media @mobile{
+    .nav-content{
+        .column-center();
+
+        nav{
+            width:80%;
+            .space-between-centered();
+            
+            a{
+                font-size:1.2rem;
+            }
+        }
+    }
+    
+}
+
